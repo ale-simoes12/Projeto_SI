@@ -1,0 +1,10 @@
+Celular.txt
+Mouse.txt
+Teclado.txt
+Fone.txt
+Relogio.txt
+Tenis.txt
+Meia.txt
+Camisa.txt
+Bone.txt
+Oculos.txt
