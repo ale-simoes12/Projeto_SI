@@ -19,17 +19,17 @@ Dentro de todas as pastas de teste existe uma pasta que contem o padrão de entr
 # Compilação e execução
 Para compilar o cliente Java basta utilizar o javac padrão em suas novas versões. Já o server em C é necessário utilizar o compilador mpicc um exemplo de compilação seria:
 ``` 
-mpicc Projeto.c -o mpi
+mpicc Server.c -o server
 ```
 
 Para a execução o cliente Java também é uma execução normal com java em suas novas versões. Já o server em C é necessário executar utilizando o mpirun, e configurar 8 ranks de execução, por utilizar 8 ranks dependendo se sua CPU tem mais ou menos núcleos que a quantidade de rank será necessário passar um parâmetro a mais, exemplos de execução:
 - Para CPU com mais de 8 núcleos:
 ``` 
-mpirun -np 8 ./mpi
+mpirun -np 8 ./server
 ```
 - Para CPU com menos de 8 núcleos:
 ``` 
-mpirun -np 8 --oversubscribe ./mpi
+mpirun -np 8 --oversubscribe ./server
 ```
 
 ## Execução dos testes
